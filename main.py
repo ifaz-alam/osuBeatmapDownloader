@@ -1,6 +1,7 @@
 import time
-from selenium import webdriver
 import requests
+from selenium import webdriver
+
 
 PATH = 'C:/Users/Ifaz/Downloads/chromedriver_win32/chromedriver.exe'
 browser = webdriver.Chrome(PATH)
