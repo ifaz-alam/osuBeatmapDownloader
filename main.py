@@ -16,6 +16,7 @@ for line in lines:
     if (line[0:4] == 'http'):
         links.append(line.split(' ')[0])
 
+# number of beatmaps processed so far
 count = 0
 
 for link in links:
