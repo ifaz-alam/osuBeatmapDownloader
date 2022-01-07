@@ -27,7 +27,7 @@ for link in links:
     response = requests.get('https://api.chimu.moe/v1/download/' + beatmapID + '?n=1')
     if (response.status_code == 404):
         # beatmap has not been found on Chimu.moe beatmap host, try alternative host
-        print('This beatmap is not available on Chimu.moe! Attempting to retrieve from Sayobot osu! beatmap mirror.')
+        print('Unable to retrieve beatmap from Chimu.moe mirror. Attempting to retrieve beatmap from Sayobot mirror instead.')
         browser.get('https://usa1.sayobot.cn/beatmaps/135/0684/novideo?filename=' + beatmapID)
     else:
         browser.get('https://api.chimu.moe/v1/download/' + beatmapID + '?n=1')
