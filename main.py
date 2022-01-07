@@ -27,4 +27,5 @@ for link in links:
     print('%d/%d beatmap listings processed' % (count, len(lines)))
     # delay in seconds
     time.sleep(1.5)
+print('Finished downloading beatmaps.')
     
