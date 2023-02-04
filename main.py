@@ -2,7 +2,7 @@ import time
 import requests
 from selenium import webdriver
 
-PATH = 'C:/Users/Ifaz/Downloads/chromedriver_win32/chromedriver.exe'
+PATH = './chromedriver.exe'
 browser = webdriver.Chrome(PATH)
 
 with open('C:/Users/Ifaz/Downloads/maps.txt', 'r') as file:
